@@ -3,7 +3,7 @@
 
  An exploration of theme for odoo-cms with bootflat for Odoo
 
-
+*EN COURS DE DEV. - WORK IN PROGRESS*
 
 + [Bootflat](http://bootflat.github.io)
 
