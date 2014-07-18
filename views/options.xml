@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+ <data>
+  <template id="clean_website_options_pattern" inherit_id="website.snippet_options">
+   <xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Clean Backgrounds</a>
+     <ul class="dropdown-menu">	 
+
+        
+		<li data-value="bg-img-01">
+         <a>Image 1</a>
+        </li>
+		
+        <li data-value="bg-img-02">
+         <a>Image  2</a>
+        </li>
+		
+		<li data-value="bg-img-03">
+         <a>Image  3</a>
+        </li>
+		
+		<li data-value="bg-img-04">
+         <a>Image 4</a>
+        </li>
+		
+		<li data-value="bg-img-05">
+         <a>Image 5</a>
+        </li>
+		
+		<li data-value="bg-img-06">
+         <a>Image 6</a>
+        </li>
+		
+		<li data-value="bg-img-07">
+         <a>Image 7</a>
+        </li>
+		
+		<li data-value="bg-img-08">
+         <a>Image 8</a>
+        </li>
+		
+		<li data-value="bg-img-09">
+         <a>Image 9</a>
+        </li>
+		
+		 <li data-value="bg-img-10">
+         <a>Image 10</a>
+        </li>
+		
+		 <li data-value="bg-img-11">
+         <a>Image 11</a>
+        </li>
+         
+		 <li data-value="bg-img-12">
+         <a>Image 12</a>
+        </li>
+ 
+     </ul>
+    </li>
+   </xpath>
+   
+       <xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Clean Shades</a>
+     <ul class="dropdown-menu">
+	 
+				
+		<li data-value="bg-white">
+         <a><i class="fa fa-square" style="color: #fff"></i> White</a>
+        </li>
+		
+		<li data-value="bg-clouds">
+         <a><i class="fa fa-square" style="color: #ECF0F1"></i> Clouds</a>
+        </li>
+		
+		<li data-value="bg-silver">
+         <a><i class="fa fa-square" style="color: #BDC3C7"></i> Silver</a>
+        </li>
+		
+		<li data-value="bg-concrete">
+         <a><i class="fa fa-square" style="color: #95A5A6"></i> Concrete</a>
+        </li>
+		
+		<li data-value="bg-stone">
+         <a><i class="fa fa-square" style="color: #7F8C8D"></i> Stone</a>
+        </li>
+		
+		<li data-value="bg-asphalt">
+         <a><i class="fa fa-square" style="color: #34495E"></i> Asphalt</a>
+        </li>
+		
+		<li data-value="bg-midnight">
+         <a><i class="fa fa-square" style="color: #2C3E50"></i> Midnight</a>
+        </li>
+		
+		<li data-value="bg-black">
+         <a><i class="fa fa-square" style="color:#000"></i> Black</a>
+        </li>
+		
+
+	</ul>
+    </li>
+   </xpath>
+   
+      <xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Clean Colors</a>
+     <ul class="dropdown-menu">
+ 
+		
+		 <li data-value="bg-turquoise">
+         <a><i class="fa fa-square" style="color: #1ABC9C"></i> Turquoise</a>
+        </li> 
+		
+		<li data-value="bg-green">
+         <a><i class="fa fa-square" style="color: #2ECC71"></i> Green</a>
+        </li>
+  
+		 <li data-value="bg-blue">
+         <a><i class="fa fa-square" style="color: #3498DB"></i> Blue</a>
+        </li>
+				
+		<li data-value="bg-purple">
+         <a><i class="fa fa-square" style="color: #9B59B6"></i> Purple</a>
+        </li>
+		
+		<li data-value="bg-pink">
+         <a><i class="fa fa-square" style="color: #f74b94"></i> Pink</a>
+        </li>
+		
+				
+		<li data-value="bg-red">
+         <a><i class="fa fa-square" style="color: #E74C3C"></i> Red</a>
+        </li>
+		
+		
+		<li data-value="bg-brown">
+         <a><i class="fa fa-square" style="color: #a15b34"></i> Brown</a>
+        </li>
+        
+		<li data-value="bg-orange">
+         <a><i class="fa fa-square" style="color: #E67E22"></i> Orange</a>
+        </li>
+			
+        <li data-value="bg-yellow">
+         <a><i class="fa fa-square" style="color: #F1C40F"></i> Yellow</a>
+        </li>
+
+		
+	</ul>
+    </li>
+   </xpath>
+   
+   <xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Clean Colors Light</a>
+     <ul class="dropdown-menu">
+ 
+		
+		 <li data-value="bg-turquoise-light">
+         <a><i class="fa fa-square" style="color: #1ABC9C"></i> Turquoise</a>
+        </li> 
+		
+		<li data-value="bg-green-light">
+         <a><i class="fa fa-square" style="color: #2ECC71"></i> Green</a>
+        </li>
+  
+		 <li data-value="bg-blue-light">
+         <a><i class="fa fa-square" style="color: #3498DB"></i> Blue</a>
+        </li>
+				
+		<li data-value="bg-purple-light">
+         <a><i class="fa fa-square" style="color: #9B59B6"></i> Purple</a>
+        </li>
+		
+		<li data-value="bg-pink-light">
+         <a><i class="fa fa-square" style="color: #f74b94"></i> Pink</a>
+        </li>
+		
+				
+		<li data-value="bg-red-light">
+         <a><i class="fa fa-square" style="color: #E74C3C"></i> Red</a>
+        </li>
+		
+		
+		<li data-value="bg-brown-light">
+         <a><i class="fa fa-square" style="color: #a15b34"></i> Brown</a>
+        </li>
+        
+		<li data-value="bg-orange-light">
+         <a><i class="fa fa-square" style="color: #E67E22"></i> Orange</a>
+        </li>
+			
+        <li data-value="bg-yellow-light">
+         <a><i class="fa fa-square" style="color: #F1C40F"></i> Yellow</a>
+        </li>
+
+		
+	</ul>
+    </li>
+   </xpath>
+   
+       <xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Clean Colors Dark</a>
+     <ul class="dropdown-menu">
+ 
+		
+		 <li data-value="bg-turquoise-dark">
+         <a><i class="fa fa-square" style="color: #1ABC9C"></i> Turquoise</a>
+        </li> 
+		
+		<li data-value="bg-green-dark">
+         <a><i class="fa fa-square" style="color: #2ECC71"></i> Green</a>
+        </li>
+  
+		 <li data-value="bg-blue-dark">
+         <a><i class="fa fa-square" style="color: #3498DB"></i> Blue</a>
+        </li>
+				
+		<li data-value="bg-purple-dark">
+         <a><i class="fa fa-square" style="color: #9B59B6"></i> Purple</a>
+        </li>
+		
+		<li data-value="bg-pink-dark">
+         <a><i class="fa fa-square" style="color: #f74b94"></i> Pink</a>
+        </li>
+		
+				
+		<li data-value="bg-red-dark">
+         <a><i class="fa fa-square" style="color: #E74C3C"></i> Red</a>
+        </li>
+		
+		
+		<li data-value="bg-brown-dark">
+         <a><i class="fa fa-square" style="color: #a15b34"></i> Brown</a>
+        </li>
+        
+		<li data-value="bg-orange-dark">
+         <a><i class="fa fa-square" style="color: #E67E22"></i> Orange</a>
+        </li>
+			
+        <li data-value="bg-yellow-dark">
+         <a><i class="fa fa-square" style="color: #F1C40F"></i> Yellow</a>
+        </li>
+
+		
+	</ul>
+    </li>
+   </xpath>
+   
+   
+   	<xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Inverse Texts Colors</a>
+     <ul class="dropdown-menu">
+
+         <li data-value="inverse-light">
+         <a>Light</a>
+		 </li>
+
+        <li data-value="inverse-dark">
+         <a>Dark</a>
+		 </li>
+		 
+		 <li data-value="inverse-cold">
+         <a>Cold</a>
+		 </li>
+
+        <li data-value="inverse-warm">
+         <a>Warm</a>
+		 </li>
+        
+		
+	</ul>
+    </li>
+   </xpath> 
+   
+   
+      	<xpath expr="//div[@data-snippet-option-id='background']//ul[@class='dropdown-menu'][1]" position="inside">
+    <li class="dropdown-submenu">
+     <a tabindex="-1" href="#">Heading Serif</a>
+     <ul class="dropdown-menu">
+
+         <li data-value="inverse-ss">
+         <a>Sans Serif</a>
+		 </li>
+
+        <li data-value="inverse-s">
+         <a>Serif</a>
+		 </li>
+        
+		
+	</ul>
+    </li>
+   </xpath> 
+
+
+    <xpath expr="//div[@data-snippet-option-id='background']" position="attributes">
+        <attribute name="data-selector">section, .carousel, .parallax, .color-block, .color-block4, headerwrap</attribute>
+    </xpath>
+   
+  </template>
+ </data>
+</openerp>

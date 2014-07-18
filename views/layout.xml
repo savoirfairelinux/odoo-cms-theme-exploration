@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="clean_script" inherit_id="website.assets_frontend" name="Clean scripts">
+    <xpath expr="/t" position="inside">
+        
+        <script type="text/javascript" src="/theme_clean_sfl/static/bootflat/js/icheck.min.js"></script>
+        <script type="text/javascript" src="/theme_clean_sfl/static/bootflat/js/jquery.fs.selecter.min.js"></script>
+        <script type="text/javascript" src="/theme_clean_sfl/static/bootflat/js/jquery.fs.stepper.min.js"></script>
+
+
+
+        <script type="text/javascript">
+            (function() {
+                'use strict';
+                openerp.website.add_template_file('/theme_clean_sfl/static/xml/theme.xml');
+            })();
+        </script>
+
+    </xpath>
+</template>
+
+</data>
+</openerp>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <record id="image_bg_clean_pic_blue" model="ir.attachment">
+        <field name="name">bg_clean_pic_blue.jpg</field>
+        <field name="datas_fname">bg_clean_pic_blue.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_blue.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_brown" model="ir.attachment">
+        <field name="name">bg_clean_pic_brown.jpg</field>
+        <field name="datas_fname">bg_clean_pic_brown.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_brown.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_dark" model="ir.attachment">
+        <field name="name">bg_clean_pic_dark.jpg</field>
+        <field name="datas_fname">bg_clean_pic_dark.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_dark.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_gray" model="ir.attachment">
+        <field name="name">bg_clean_pic_gray.jpg</field>
+        <field name="datas_fname">bg_clean_pic_gray.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_gray.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_green" model="ir.attachment">
+        <field name="name">bg_clean_pic_green.jpg</field>
+        <field name="datas_fname">bg_clean_pic_green.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_green.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_orange" model="ir.attachment">
+        <field name="name">bg_clean_pic_orange.jpg</field>
+        <field name="datas_fname">bg_clean_pic_orange.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_orange.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_pink" model="ir.attachment">
+        <field name="name">bg_clean_pic_pink.jpg</field>
+        <field name="datas_fname">bg_clean_pic_pink.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_pink.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_purple" model="ir.attachment">
+        <field name="name">bg_clean_pic_purple.jpg</field>
+        <field name="datas_fname">bg_clean_pic_purple.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_purple.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_red" model="ir.attachment">
+        <field name="name">bg_clean_pic_red.jpg</field>
+        <field name="datas_fname">bg_clean_pic_red.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_red.jpg</field>
+    </record>
+    <record id="image_bg_clean_pic_yellow" model="ir.attachment">
+        <field name="name">bg_clean_pic_yellow.jpg</field>
+        <field name="datas_fname">bg_clean_pic_yellow.jpg</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_clean_sfl/static/img/library/bg/bg_clean_pic_yellow.jpg</field>
+    </record>
+</data>
+</openerp>

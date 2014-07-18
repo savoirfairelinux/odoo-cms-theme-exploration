@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+<!--
+    Customize Themes
+
+    Use INPUT type 'checkbox' or 'radio' or use OPTION in select box
+    'data-xmlid' (optional) xml id of the template to add if the input is checked.
+        You can set a list of xml id separate by comma (all template is enable or 
+        disable in same time)
+    'data-enable' (optional) to checked one or more HTML ids, or list separate by comma
+    'data-disable' (optional) to unchecked one or more HTML ids, or list separate by comma
+    'data-reload="/"' (optional) force the reloading of the page if the url match with
+        the string ( = regexp).
+        Otherwise, only the '/web/css/website.assets_frontend' is reloaded
+
+    For the sets (data-enable and/or data-disable without data-xmlid), the set is
+    automatically checked if:
+    - all related fields are enabled for data-enable
+    - all related fields are disabled for data-disable
+    else unchecked
+    
+    HTML apply classes:
+    - 'checked': on the parent label when input is checked
+    - 'in': on the container (e.g.: bootstrap modal) after added in DOM (removed together 
+       out is added)
+    - 'out': on the container 1 second before removed from ths DOM
+    - 'loading': on the container/modal when the new css is loading
+-->
+
+<t t-extend="website.theme_customize">
+    <t t-jquery="#theme_customize_modal" t-operation="replace">
+        <div id="theme_customize_modal" class="modal fade bs-example-modal-sm">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="loading_backdrop"></div>
+                    <div class="modal-header">
+                        <button type="button" class="close">×</button>
+                        <h4 class="modal-title" id="mySmallModalLabel">Customize your theme</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <h5 class="modal-h5">LAYOUT</h5>
+                            <tr>
+                                <td class=" text-center">
+                                    <label class="chd-layout-combi center-block">
+                                        <h6 class="text-center modal-h6 chd-layout-combi">FULL WIDTH</h6>
+                                        <input name="layoutvar" type="radio" data-xmlid="theme_clean_sfl.option_layout_full" />
+                                    </label>                                 
+                                </td>
+                                <td class=" text-center">
+                                    <label class="chd-layout-combi center-block">
+                                       <h6 class="text-center modal-h6 chd-layout-combi">BOXED</h6>
+                                        <input name="layoutvar" type="radio" data-xmlid="theme_clean_sfl.option_layout_boxed"/>
+                                    </label>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        
+                         <table>
+                            <h5 class="modal-h5">BACKGROUND IMAGE</h5>
+                            <tr>
+                                <td>
+                                    <label class="chd-img-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/img-01.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_img_01" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-img-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/img-02.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_img_02" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-img-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/img-03.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_img_03" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-img-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/img-04.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_img_04" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-img-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/img-05.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_img_05" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-img-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/img-06.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_img_06" />
+                                    </label>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        
+                        <table>
+                            <h5 class="modal-h5">BACKGROUND COLORS</h5>
+                            <tr>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/layout-light.gif" alt="LIGHT" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_light"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/layout-warm.gif" alt="WARM" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_warm" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/layout-cold.gif" alt="COLD" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_cold"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/layout-medium.gif" alt="MEDIUM" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_medium"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/layout-cloudy.gif" alt="CLOUDY" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_cloudy"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/layout-dark.gif" alt="DARK" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_bg_dark"/>
+                                    </label>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-black.gif" alt="BLACK" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_boxed_color_black"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-emerald-dark.gif" alt="EMERALD" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_boxed_color_emerald" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-cobalt-dark.gif" alt="COBALT" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_boxed_color_cobalt"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-amethyst-dark.gif" alt="AMETHYST" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_boxed_color_amethyst"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-ruby-dark.gif" alt="RUBY" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_boxed_color_ruby"/>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-bg-layout-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-gold-dark.gif" alt="GOLD" class="chd-bg-layout-combi-img"/>
+                                        <input name="bgcolorvar" type="radio" data-xmlid="theme_clean_sfl.option_boxed_color_gold"/>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <h5 class="modal-h5">MAIN COLOR</h5>
+                            <tr>
+                                <td>
+                                    <label class="chd-color-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-stone.gif" alt="Stone" class="chd-color-combi-img"/>
+                                        <input name="colorvar" type="radio" data-xmlid="theme_clean_sfl.option_color_stone" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-color-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-emerald.gif" alt="Emerald" class="chd-color-combi-img"/>
+                                        <input name="colorvar" type="radio" data-xmlid="theme_clean_sfl.option_color_emerald" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-color-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-cobalt.gif" alt="Cobalt" class="chd-color-combi-img"/>
+                                        <input name="colorvar" type="radio" data-xmlid="theme_clean_sfl.option_color_cobalt" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-color-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-amethyst.gif" alt="Amethyst" class="chd-color-combi-img"/>
+                                        <input name="colorvar" type="radio" data-xmlid="theme_clean_sfl.option_color_amethyst" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-color-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-ruby.gif" alt="Blue" class="chd-color-combi-img"/>
+                                        <input name="colorvar" type="radio" data-xmlid="theme_clean_sfl.option_color_ruby" />
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="chd-color-combi">
+                                        <img src="/theme_clean_sfl/static/img/selector/variant-gold.gif" alt="Gold" class="chd-color-combi-img"/>
+                                        <input name="colorvar" type="radio" data-xmlid="theme_clean_sfl.option_color_gold" />
+                                    </label>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        <table>
+                            <h5 class="modal-h5">FONTS COMBINATIONS</h5>
+                            <tr>
+                                <td style="width:33%">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Ubuntu-Regular'; font-size:11px">Ubuntu</span>
+                                        <span style="font-family:'PT_Sans-Web-Regular'; font-size:11px" >/ PT Sans</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_UbuntuPtSans"/>
+                                    </label>
+                                </td>
+                                <td style="width:33%">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Lato-Light'; font-size:11px">Lato Light</span>
+                                        <span style="font-family:'Muli-Regular'; font-size:11px" >/ Muli</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_LatoLightMuli"/>
+                                    </label>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td style="width:33%">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Oswald-Regular'; font-size:11px">Oswald</span>
+                                        <span style="font-family:'Muli-Regular'; font-size:11px" >/ Muli</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_OswaldMuli"/>
+                                    </label>
+                                </td>
+                                <td style="width:33%">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Bitter-Regular'; font-size:11px">Bitter</span>
+                                        <span style="font-family:'DroidSerif'; font-size:11px" >/ Droid Serif</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_BitterDroidSerif"/>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>  
+                                <td style="width:33%">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Quattrocento-Regular'; font-size:11px">Quattrocento</span>
+                                        <span style="font-family:'Bitter-Regular'; font-size:11px" >/ Bitter</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_QuattrocentoBitter"/>
+                                    </label>
+                                </td>
+                                <td style="width:33%">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Vollkorn-Regular'; font-size:11px">Vollkorn</span>
+                                        <span style="font-family:'Alice-Regular'; font-size:11px" >/ Alice</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_VollkornAlice"/>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width:33% ">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Quattrocento-Regular'; font-size:11px">Quattrocento</span>
+                                        <span style="font-family:'PT_Sans-Web-Regular'; font-size:11px" >/ PT Sans</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_QuattrocentoPtSans"/>
+                                    </label>
+                                </td>
+                                <td style="width:33% ">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Vollkorn-Regular'; font-size:11px">Vollkorn</span>
+                                        <span style="font-family:'Raleway-Regular'; font-size:11px" >/ Raleway</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_VollkornRaleway"/>
+                                    </label>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td style="width:33% ">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'LibreBaskerville-Regular'; font-size:11px">Libre Baskerville</span>
+                                        <span style="font-family:'OpenSans-Regular'; font-size:11px" >/ Open Sans</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_LibreBaskervilleOpenSans"/>
+                                    </label>
+                                </td>
+                                <td style="width:33% ">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'Dosis-Regular'; font-size:11px">Dosis</span>
+                                        <span style="font-family:'OpenSans-Regular'; font-size:11px" >/ OpenSans</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_DosisOpenSans"/>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width:33% ">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'MontserratAlternates-Regular'; font-size:11px">Montserrat Alt</span>
+                                        <span style="font-family:'Imprima-Regular'; font-size:11px" >/ Imprima</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_MontserratAltImprima"/>
+                                    </label>
+                                </td>
+                                <td style="width:33% ">
+                                    <label class="text-black chd-fonts-combi">
+                                        <span style="font-family:'MedulaOne-Regular'; font-size:11px">Medula One</span>
+                                        <span style="font-family:'Abel-Regular'; font-size:11px" >/ Abel</span>
+                                        <input name="theme" type="radio" data-xmlid="theme_clean_sfl.option_font_MedulaOneAbelOxygen"/>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</t>
+
+    
+</templates>

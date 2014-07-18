@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<!-- <template id="website.theme_chd_misc" name="theme_chd_misc" inherit_id="website.theme" optional="enabled" priority="1">
+     <xpath expr="//link[last()]" position="after"> -->
+        <!-- Boostrap -->
+        <!-- <link href="/theme_clean_sfl/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
+
+
+        <!-- Bootflat -->
+<!--         <link href="/theme_clean_sfl/static/bootflat/css/bootflat-sfl.css" rel="stylesheet" type="text/css"/>
+
+        <link href="/theme_clean_sfl/static/css/site.css" rel="stylesheet" type="text/css"/>
+
+
+    </xpath>
+</template> -->
+<template id="website.themes" name="Themes">
+    <t t-call="website.layout">
+          <div id="wrap" groups="base.group_website_publisher">
+            <div class="container">
+    
+            <div class="alert alert-info mt32" t-if="theme_changed">
+                <button type="button" class="close" data-dismiss="alert">&amp;times;</button>
+                <p>
+                    <h4>Theme Changed!</h4>
+                    Have a look at <a href="/">your homepage</a> or try another theme below.
+                </p>
+            </div>
+            <h1 class="text-center">Essayez un nouveau Theme</h1>
+            <h3 class="text-center text-muted">Un seul pour le moment ;)</h3>
+    
+            <div class="row mt32" id="themes-list">
+    
+              <div class="col-md-4">
+                <div class="well text-center">
+                  <div class="image">
+                    <img src="/website/static/src/img/bootswatch_default_thumbnail.png" class="img-responsive" alt="Default Theme"/>
+                  </div>
+                  <div class="options">
+                    <h3>Bootflat</h3>
+                    <p>Du pure Bootflat</p>
+                    <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_clean_sfl">Apply</a>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</t>
+   
+</template>
+
+
+    <template id="website.theme_clean_sfl" name="SFL - bootflat" inherit_id="website.theme" optional="enabled" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <!-- Bootflat -->
+            <link href="/theme_clean_sfl/static/bootflat/css/bootflat-sfl.css" rel="stylesheet" type="text/css"/>
+            <link href="/theme_clean_sfl/static/css/site.css" rel="stylesheet" type="text/css"/>
+        </xpath>
+        <xpath expr="//link[@id='bootstrap_css']" position="replace">
+            <link rel='stylesheet' href='/theme_clean_sfl/static/css/bootstrap.min.css' t-ignore="true"/>
+        </xpath>
+    </template>
+
+
+<template id="option_test_aui" name="option_test_aui" inherit_id="website.theme" optional="disabled">
+    <xpath expr="//link[last()]" position="after">
+        <link href="/theme_clean_sfl/static/css/aui.css" rel="stylesheet" type="text/css"/>
+    </xpath>
+</template>
+
+
+</data>
+</openerp>
